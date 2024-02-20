@@ -2,6 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const work = () =>{
+    console.log('work')
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +20,8 @@ function App() {
         >
           Learn React
         </a>
+        <button onClick={work}>work</button>
+        <button onClick={() => { throw new Error('error'); }}>dont work</button>
       </header>
     </div>
   );
