@@ -4,11 +4,11 @@ import './index.css';
 import App from './App';
 import * as Sentry from "@sentry/browser";
 
-Sentry.init({ dsn: "https://9c6d348e60f94b47aeb025e017576172@glitch.flipp.space/2" });
+Sentry.init({ dsn: 'https://9c6d348e60f94b47aeb025e017576172@glitch.flipp.space/2' });
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  //<React.StrictMode>
     <App />
-  </React.StrictMode>
+  //</React.StrictMode>
 );
